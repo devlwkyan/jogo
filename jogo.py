@@ -1,8 +1,9 @@
+
 import random
 
 x = input("Jogo da megasena ou lotofácil? ").lower()
 
-if x == "megasena":
+if x == "megasena" or X == "mega sena":
     jogo = []
     
     n = int(input("Quantos jogos você quer fazer? "))
@@ -20,4 +21,4 @@ if x == "lotofacil" or x == "lotofácil":
     for i in range(n):
         jogo.append(random.sample(range(1, 26), 15))
         jogo.append(" ")
-    print(jogo)
+print(jogo)
